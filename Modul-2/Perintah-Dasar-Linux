@@ -1,1 +1,15 @@
+#Prompt Terminal Ubuntu
 
+free -sh
+cat /proc/meminfo
+cat /proc/cpuinfo
+lscpu
+swapon --summary
+vmstat -s
+ps aux --sort=-%mem|head
+whoami
+chmod --version
+sudo reboot
+sudo shutdown -h how + 10
+sudo shutdown -cl
+sudo shutdown -r now
