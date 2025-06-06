@@ -1,0 +1,47 @@
+# Prompt terminal
+
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -aG docker Pall
+newgrp docker
+sudo systemctl status docker
+mkdir Docker
+cd Docker
+xhost +local:docker
+xhost
+docker run -it \
+--nem venv-py-gui \
+-e DISPLAY=$DISPLAY \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+python:3.12 bash
+apt update && apt install -y python3-tk
+pip install numpy matplotlib
+python
+
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+plt.title("Grafik Sinus")
+plt.show()
+
+mkdir virtualenv
+cd virtualenv
+python3 -m venv env
+ls
+source env/bin/activate
+xhost +local:virtualenv
+xhost
+pip install numpy matplotlib
+pyhton
+
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+plt.plot(x, y)
+plt.title("Contoh Grafik")
+plt.show()
