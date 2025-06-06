@@ -1,0 +1,39 @@
+# Prompt terminal
+ip a
+ping 8.8.8.8
+
+ip a
+ping 8.8.8.8
+
+ip a 
+ping 192.168.56.2
+
+sudo apt install openssh-server
+sudo systemctl enable ssh
+sudo systemctl start ssh
+ssh valskie@192.168.89.244
+ls /home/valskie/
+cat pall.txt
+
+ip a
+ping 192.168.89.244
+
+sudo ufw enable
+sudo ufw allow 22
+sudo ufw status
+
+sudo ufw deny 22
+sudo ufw status
+sudo ufw allow 22
+sudo ufw status
+
+sudo adduser $namauser -y
+sudo addgroup modul5
+sudo usermod -aG modul5 $namauser
+sudo chown $namauser tugas.txt
+sudo chown $namauser:modul5 tugas.txt
+ls -l
+sudo chmod 750 tugas.txt
+ls -l
+
+
