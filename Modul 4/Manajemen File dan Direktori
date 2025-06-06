@@ -1,0 +1,55 @@
+# Prompt terminal
+
+mkdir Modul4
+ls
+cd Modul4
+touch file1.txt
+ls
+mkdir folderbaru
+ls
+cp file1.txt folderbaru
+ls
+cd folderbaru
+ls
+cd ..
+mkdir foldersampah
+touch filesampah.txt
+ls
+rm filesampah.txt
+ls
+rmdir foldersampah.txt
+ls
+mv file1.txt file2.txt
+ls
+mv file2.txt folderbaru
+ls
+cd folderbaru
+ls
+mv file2.txt /home/Pall/Modul4
+ls
+cd ..
+ls
+ls -l
+chmod u+x file2.txt
+ls -l
+chmod g+x file2.txt
+ls -l
+chmod o+w file2.txt
+ls -l
+chmod ug-w file2.txt
+ls -l
+chmod 755 file2.txt
+ls -l
+chmod 000 file2.txt
+ls -l
+sudo adduser $namauser -y
+ls -l
+sudo chown $namauser file2.txt
+sudi chown :$namauser folderbaru
+ls -l
+cd ..
+ls -l
+sudo chown -R $namauser:$namauser Modul4
+ls -l
+cd Modul4
+ls -l
